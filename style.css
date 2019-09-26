@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-image: url('macbook.jpg');
+  background-image: url('../images/macbook.jpg');
   background-attachment: fixed;
   background-size: cover;
   color: #fff;
@@ -45,9 +45,9 @@ li {
 .header .list {
   display: inline-block;
   width: 150px;
-  height: 70px;
+  height: 75px;
   font-size: 2.7rem;
-  line-height: 70px;
+  line-height: 75px;
   margin-top: 50px;
 }
 
@@ -62,7 +62,7 @@ li {
 }
 
 .header .list > a:hover {
-  border: 1.8px solid darkgray;
+  border: 1.8px solid #777;
   background-color: darkgray;
 }
 
@@ -74,7 +74,7 @@ li {
 /* about */
 .about {
   background-color: whitesmoke;
-  padding: 80px 0;
+  padding: 80px 0 100px;
 }
 
 .title {
@@ -101,12 +101,12 @@ li {
 }
 
 .about .hkbs {
-  background-image: url('hkbs.jpg');
+  background-image: url('../images/hkbs.jpg');
   float: left;
 }
 
 .about .hkdsc {
-  background-image: url('hkdsc.jpg');
+  background-image: url('../images/hkdsc.jpg');
   float: right;
 }
 
@@ -121,6 +121,10 @@ li {
   font-family: 'Kosugi Maru';
   text-align: left;
   line-height: 1.5;
+}
+
+.about .desc:last-of-type {
+  margin-bottom: 0;
 }
 
 /* product */
@@ -158,13 +162,13 @@ li {
 }
 
 .product .kaden {
-  background-image: url('kaden.png');
+  background-image: url('../images/kaden.png');
   background-size: cover;
   float: left;
 }
 
 .product .washoku {
-  background-image: url('washoku.png');
+  background-image: url('../images/washoku.png');
   background-size: cover;
   float: right;
 }
@@ -198,7 +202,7 @@ li {
 /* skill */
 .skill {
   background-color: whitesmoke;
-  padding: 80px 0;
+  padding: 80px 0 50px;
 }
 
 .skill .title {
@@ -220,7 +224,7 @@ li {
   width: inherit;
   height: 200px;
   border-radius: 50%;
-  box-shadow: 0 0 15px gray;
+  box-shadow: 0 0 10px gray;
 }
 
 .skill .fab {
@@ -252,5 +256,280 @@ li {
 
 /* footer */
 .footer {
-  padding: 150px 0 50px;
+  padding: 100px 0 50px;
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+  body {
+    background-image: none;
+    background-color: silver;
+  }
+
+  .header {
+    padding: 200px 0px;
+  }
+
+  .content {
+    width: 600px;
+  }
+
+  .header .name {
+    font-size: 7rem;
+  }
+
+  .header .list {
+    width: 130px;
+    height: 65px;
+    font-size: 2.5rem;
+    line-height: 65px;
+  }
+
+  .header .list > a {
+    transition: all 0s;
+  }
+
+  .header .list > a:hover {
+    border: 1.8px solid white;
+    background-color: transparent;
+  }
+
+  .title {
+    font-size: 6rem;
+  }
+
+  .about .image {
+    width: 285px;
+    height: 142.5px;
+    border-radius: 3px;
+  }
+
+  .about .desc {
+    font-size: 2.0rem;
+  }
+
+  .product .link {
+    width: 285px;
+    height: 142.5px;
+    box-shadow: 0 0 15px dimgray;
+  }
+
+  .product .desc-wrapper {
+    width: 285px;
+    height: 142.5px;
+  }
+
+  .product .desc-title {
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+  }
+
+  .product .desc {
+    font-size: 1.5rem;
+  }
+
+  .skill .skill-box {
+    margin: 0 60px 50px;
+    width: 180px;
+    height: 252px;
+  }
+
+  .skill .skill-item {
+    height: 180px;
+  }
+
+  .skill .fab {
+    font-size: 10rem;
+    line-height: 180px;
+  }
+
+  .skill .skill-name {
+    font-size: 2.5rem;
+    line-height: 72px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 150px 0;
+  }
+
+  .content {
+    width: 400px;
+  }
+
+  .header .name {
+    font-size: 5rem;
+  }
+
+  .header .list {
+    width: 100px;
+    height: 50px;
+    font-size: 2rem;
+    line-height: 50px;
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+
+  .about .image {
+    width: 400px;
+    height: 200px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+  }
+
+  .about .hkbs {
+    float: none;
+  }
+
+  .about .hkdsc {
+    float: none;
+  }
+
+  .about .desc {
+    font-size: 1.8rem;
+  }
+
+  .product .link {
+    width: 400px;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+
+  .product .kaden {
+    float: none;
+  }
+
+  .product .washoku {
+    float: none;
+  }
+
+  .product .desc-wrapper {
+    width: 400px;
+    height: 200px;
+  }
+
+  .product .desc-kaden {
+    float: none;
+  }
+
+  .product .desc-washoku {
+    float: none;
+  }
+
+  .product .desc-title {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+
+  .product .desc {
+    font-size: 1.8rem;
+  }
+
+  .skill .skill-box {
+    margin: 0 auto 50px;
+    float: none;
+  }
+
+  .footer {
+    padding: 80px 0 40px;
+  }
+}
+
+@media (max-width: 432px) {
+  .header {
+    padding: 80px 0;
+  }
+
+  .content {
+    width: 280px;
+  }
+
+  .header .list {
+    display: block;
+    width: 250px;
+    margin: 50px auto 0;
+  }
+
+  .header .list-product,
+  .header .list-skill {
+    margin-top: 30px;
+  }
+
+  .header .list > a {
+    display: block;
+  }
+
+  .about {
+    padding: 80px 0;
+  }
+
+  .title {
+    margin: 0 auto 50px;
+    font-size: 4rem;
+  }
+
+  .about .image-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .about .image {
+    width: 280px;
+    height: 140px;
+    border-radius: 3px;
+  }
+
+  .about .desc {
+    font-size: 1.5rem;
+  }
+
+  .product {
+    padding: 80px 0;
+  }
+
+  .product .link {
+    width: 280px;
+    height: 140px;
+    margin-bottom: 30px;
+  }
+
+  .product .desc-wrapper {
+    width: 280px;
+    height: 140px;
+  }
+
+  .product .desc-title {
+    margin-bottom: 15px;
+    font-size: 2rem;
+  }
+
+  .product .desc {
+    font-size: 1.5rem;
+  }
+
+  .skill .skill-box {
+    margin: 0 auto 20px;
+    width: 140px;
+    height: 196px;
+  }
+
+  .skill .skill-item {
+    height: 140px;
+  }
+
+  .skill .fab {
+    font-size: 7.5rem;
+    line-height: 140px;
+  }
+
+  .skill .skill-name {
+    font-size: 2rem;
+    line-height: 56px;
+  }
+
+  .footer {
+    padding: 50px 0 30px;
+  }
 }
